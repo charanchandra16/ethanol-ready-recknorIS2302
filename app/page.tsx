@@ -188,19 +188,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Breakdown */}
-                <div className="rounded-xl p-3" style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1.5">Calculation Breakdown</p>
-                  <div className="space-y-0.5 text-xs font-mono text-slate-600">
-                    <p>Input: temp = <b style={{color:'#007A3D'}}>{result.inputTemp}°C</b>, obs = <b style={{color:'#1565C0'}}>{result.inputObs}</b></p>
-                    <p>Degree @ 20°C = <b style={{color:'#007A3D'}}>{result.degreeAt20C}</b> (from lookup table)</p>
-                    <p>Conversion Factor = <b style={{color:'#1565C0'}}>{result.conversionFactor}</b></p>
-                    <p>Purity = {result.degreeAt20C} ÷ {result.conversionFactor} = <b style={{color:'#e65100'}}>{result.purity.toFixed(1)}%</b></p>
-                    {result.specificGravity !== null && (
-                      <p>SG @ 15.6°C = <b style={{color:'#c62828'}}>{result.specificGravity.toFixed(4)}</b> (from SG table at {result.purity.toFixed(1)}%)</p>
-                    )}
-                  </div>
-                </div>
               </div>
             </div>
           )}
