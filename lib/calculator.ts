@@ -70,14 +70,15 @@ export function calculate(
   let specificGravity: number | null = null;
   const sgKeys = Object.keys(sgLookup).map(Number);
   const purityKey = Math.round(purity * 100);
-  const closestSgKey = findClosestKey(sgKeys, purityKey, 5);
+  const closestSgKey = findClosestKey(sgKeys, purityKey, 6);
   if (closestSgKey !== null) {
     specificGravity = sgLookup[closestSgKey];
   }
 
+   
   return {
-    inputTemp: closestTempKey / 10,
-    inputObs: closestObsKey / 10,
+    inputTemp: closestTempKey ,
+    inputObs: closestObsKey ,
     degreeAt20C,
     conversionFactor,
     purity,

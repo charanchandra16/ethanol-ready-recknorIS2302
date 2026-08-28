@@ -129,7 +129,7 @@ export default function Home() {
 
               {/* Buttons */}
               <div className="flex gap-2">
-                <button onClick={handleCalculate} disabled={isCalculating} className="btn-calculate flex-1 py-2.5 px-4 rounded-xl font-bold text-sm text-white focus:outline-none focus:ring-4 disabled:opacity-60 disabled:cursor-not-allowed" style={{ focusRingColor: '#007A3D' }}>
+                <button onClick={handleCalculate} disabled={isCalculating} className="btn-calculate flex-1 py-2.5 px-4 rounded-xl font-bold text-sm text-white focus:outline-none focus:ring-4 disabled:opacity-60 disabled:cursor-not-allowed" >
                   {isCalculating ? (
                     <span className="flex items-center justify-center gap-1.5">
                       <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
