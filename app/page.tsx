@@ -167,7 +167,8 @@ export default function Home() {
                   <ResultCard
                     label="Corresponding Degree @ 20°C"
                     value={result.degreeAt20C.toFixed(1)}
-                    unit="" accent="#007A3D" bg="#f0faf4" border="#a7d7b8"
+                    unit="" accent="#FFB81C" bg="#fffde7" border="#ffe082"
+                    big labelColor="#000"
                   />
                   <ResultCard
                     label="Volume at 20°C Conversion Factor"
@@ -177,8 +178,7 @@ export default function Home() {
                   <ResultCard
                     label="Ethanol Purity"
                     value={result.purity.toFixed(1)}
-                    unit="%" accent="#FFB81C" bg="#fffde7" border="#ffe082"
-                    big labelColor="#000"
+                    unit="%" accent="#007A3D" bg="#f0faf4" border="#a7d7b8"
                   />
                   <ResultCard
                     label="Specific Gravity @ 15.6°C"
